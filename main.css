@@ -394,10 +394,10 @@ html, body {
   }
 
   .conteiner img {
-    margin-top:56px ;
+    margin-top:36px ;
     margin-left: 10px;
     bottom: 30px;
-    max-width: 80%;
+    max-width: 60%;
     height: 40%;
     position: relative;
     top: 40px;
@@ -410,12 +410,18 @@ html, body {
     
   }
 
+  .conteiner  {
+    display: flex;
+
+  }
   .conteudoImg p {
     display: flex;
     position: relative;
     color: rgb(20, 20, 20);
     font-size: 18px;
+    width: 450px;
     left: 450px;
+    top: 50px;
     }
   
   .conteudoImg h2  {
@@ -497,7 +503,7 @@ html, body {
     margin-left:10px ;
     position: relative;
     margin-top: 10px;
-    bottom: 190px;
+    bottom: 260px;
   }
 
   .h2Titulo h2 {
