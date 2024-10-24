@@ -6,21 +6,28 @@
 }
 
 html, body {
-  height: 100%;
+    background-color: #2c2c2c; /* Cinza escuro */
+    font-family: Arial, sans-serif; /* Fonte geral */
+    color: #f2f2f2; /* Cor do texto em um cinza claro */
+    margin: 0;
+    padding: 0;
+    height: 100%;
   /* Evitar overflow:hidden aqui, a menos que seja necessário */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* tela celular  */
-@media (min-width: 576px) and (max-width:800px) {
+@media  (max-width:767px) {
+
+
   /* Estilos para telas a partir de 576px */
   .principal {
-    max-width: 1000px; /* Ajuste a largura para telas entre 801px e 1199px */
+    max-width: 100%; /* Ajuste a largura para telas entre 801px e 1199px */
     margin: 0 auto;
     padding: 0;
     background-color: rgb(255, 255, 255);
-    min-height: 600px;
+    
   }
   
   header {
@@ -35,20 +42,22 @@ html, body {
     margin: 0 auto;
   }
 
-  .cabecalho  h1  {
+  /* .cabecalho  h1  {
     padding: auto;
-    font-size: 14px
-
-  }
+    font-size: 14px; 
+    
+  } */
 
   .conteiner-header {
     display: flex;
+    padding-top: 10px;
     justify-content: space-between;
     align-items: center;
   }
 
   .menu li { 
-
+    position:relative;
+    top: 10px;
     display:inline;
     list-style: none;
     text-decoration: none;
@@ -56,7 +65,6 @@ html, body {
     color: aliceblue;
     justify-content: space-between;
     align-items: center;
-    
     
   }
   
@@ -79,7 +87,7 @@ html, body {
   
   .conteudoImg h2{
     align-items: center;
-    left: 10px;
+    
     padding: 10px;
     position: relative;
     font-size: 28px;
@@ -95,8 +103,7 @@ html, body {
   }
 
   .conteudoImg {
-    position: relative;
-    top: 20px;
+    margin: auto 0;
     text-align: center;
   }
 
@@ -108,12 +115,12 @@ html, body {
 
   .conteudoImg .h2 {
     position: relative;
-    left: 50%;
-    right: 50%;
+    top:20px;
+    margin: auto 0;
   }
 
   .conteudoImg p{
-    margin-bottom: -20px;
+    margin-top: 10px;
   }
 
 
@@ -123,13 +130,32 @@ html, body {
     justify-content: space-around; /* Alinha os produtos de maneira uniforme */
   }
 
-  #produtos {
-   
+  #list-productsprodutos {
     width: 100%;
     position: relative;
     top: 55px;
     margin-left: 10px;
+  }
 
+  article {
+    background-color: #f5f5f5; 
+    margin: 20px;
+    padding: 20px;
+    border-radius:8px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    max-width: 100%;
+    align-items:center;
+  }
+  
+  article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px rgba(0, 0, 0, 0.3);
   }
 
   article h2 {
@@ -142,61 +168,50 @@ html, body {
     text-align: left;
   }
 
-  .H2Titulo  .h2{
-    position: relative;
-    right: 10px;
-    font-size:28px ;
-    
-
-
-  }
-
-  article {
-    position: relative;
-    right: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  article h2 {
     margin-bottom: 20px;
-    width: 200px;
-    max-width: 25%;
-    overflow: hidden;
-    align-items:center;
-    padding: 15px;
+    font-size: 25px;
   }
 
-  article p,h2 {
-    font-size: 1px;
+  article p {
+    font-size: 18px;
     position: relative;
     
-
   }
 
   article img {
-    width: 100%;
-    max-width: 100px;
+    width: 400;
+    max-width:100%;
     height: auto;
     margin: 0 auto;
     position: relative;
   }
-  .customBtn  {
 
+  .H2Titulo  .h2{
+    position: relative;
+    right: 10px;
+    top: 2px;
+    font-size:28px ;
+  }
+
+  .customBtn  {
     display: inline-flex;
     align-items: center; 
     white-space: nowrap; 
     margin: 0 auto;
+    left: 403px;
 
 
   }
 
   .customBtn span {
-    
-    font-size: 12px ;
+    font-size: 20px ;
     display: inline-flex;
+    
   }
 }
 /* tela tablet */
-@media (min-width: 801px) and  (max-width:1199px){
+@media (min-width: 768px) and  (max-width:1024px){
     /* para tablets em modo  paisagem */
   .principal {
     max-width: 1000px; /* Ajuste a largura para telas entre 801px e 1199px */
@@ -318,7 +333,7 @@ html, body {
   article {
     position: relative;
     align-items:left;
-    max-width: 25%;
+    max-width: 50%;
     padding: 15px;
   }
 
@@ -342,7 +357,7 @@ html, body {
   }
 }
 /* tela desktop */
-@media (min-width: 1200px) {
+@media (min-width:1025) {
   .principal {
     max-width: 1200px;
     margin: 0 auto;
