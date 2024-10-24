@@ -158,34 +158,36 @@ html, body {
     box-shadow: 0 16px rgba(0, 0, 0, 0.3);
   }
 
-  article h2 {
-    position: relative;
-    left: 5px;
+  .product-title {
     font-size: 18px;
-    justify-content:space-around ;
-    top: 10px; 
-    align-items: center;
-    text-align: left;
+    color: #333;
+    margin-bottom:10px ;
   }
 
-  article h2 {
-    margin-bottom: 20px;
-    font-size: 25px;
-  }
+  .product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+  } 
 
-  article p {
-    font-size: 18px;
-    position: relative;
-    
+  .product-price {
+    font-size: 24px; 
+    font-weight: bold;
+    color:#010101 ;
+    margin: 0;
+    padding: 10px 0;
+    border-top:2px solid #ddd ;
+    display: inline-block;
   }
 
   article img {
-    width: 400;
+    width: 400px;
     max-width:100%;
-    height: auto;
     margin: 0 auto;
     position: relative;
   }
+
+
 
   .H2Titulo  .h2{
     position: relative;
@@ -218,13 +220,13 @@ html, body {
     margin: 0 auto;
     padding: 0;
     background-color: rgb(255, 255, 255);
-    min-height: 600px;
+    height: 1900px;
   }
   
   header {
     position: fixed;
     width: 100%;
-    max-width: 1199px;
+    max-width: 1024px;
     padding: 10px 15px; /* Pode ajustar o padding para telas menores */
     z-index: 1000;
     background-color: black;
@@ -235,8 +237,6 @@ html, body {
 
   .conteiner  {
     display: flex;
-
-
   }
 
   .conteiner-header {
@@ -254,8 +254,6 @@ html, body {
     color: aliceblue;
     justify-content: space-between;
     align-items: center;
-    
-    
   }
 
   .menu li a  {
@@ -270,8 +268,6 @@ html, body {
 
   #sobre-loja {
     display: inline-flex;
-
-
   }
 
   .conteiner img {
@@ -280,8 +276,7 @@ html, body {
     max-width: 50%;
     height: auto;
     position: relative;
-    top: 20px;
-    
+    top: 20px;    
   }
 
   .conteudoImg {
@@ -297,7 +292,6 @@ html, body {
     font-size: 16px;
     left: 210px;
     top: 5px;
-    
   }
 
   .conteudoImg h2 {
@@ -312,67 +306,110 @@ html, body {
   }
 
   .listaProdutos {
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap; /* Faz com que os produtos se ajustem melhor em telas menores */
     justify-content: space-around; /* Alinha os produtos de maneira uniforme */
+    
   }
 
-  #produtos {
+  #list-products {
+    max-width: 1024px;
     position: relative;
-    top: 60px;
+    top:50px;
     margin-left: 10px;
-
   }
 
-  #produtos h2 {
+  #list-products h2 {
     position: relative;
-    left: 5px;
-    top: 10px; 
+    margin: 10px auto auto 10px;
+    top: 11px; 
   }
 
   article {
-    position: relative;
-    align-items:left;
-    max-width: 50%;
+    
+    width: 48%;
     padding: 15px;
+    /* box-sizing: border-box; */
   }
-
-  article h2 {
-    font-size: 18px;
-    align-items: center;
-    text-align: left;
-    position: relative;
   
-  }
-  article p {
-    font-size: 12px;
-  }
   article img {
     position: relative;
-    width: 130px;
+    width: 400px;
+    max-width: 100%;
   }
-  .btn {
-    padding-left:10px ;
+
+  .product-title  {
     position: relative;
+    right: 10px;
+    top: px;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+    
   }
+
+  .product-description {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+  } 
+
+  .product-price {
+    font-size: 34px; 
+    font-weight: bold;
+    color:#010101 ;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom:2px solid #ddd ;
+    display: inline-block;
+  }
+
+  .btn { padding: 5px 10px; /* Reduz o padding para deixar o botão mais fino */
+    font-size: 14px; /* Ajuste o tamanho do texto se necessário */
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    position: relative;
+    left: 20px;
+  }
+  .customBtn span {
+    position: relative;
+    font-size: 16px;
+  }
+
+  .price-conteiner {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    padding: 10px auto auto 10px;
+    
+
+  } 
+
 }
 /* tela desktop */
-@media (min-width:1025) {
+@media (min-width:1025px) {
   .principal {
-    max-width: 1200px;
     margin: 0 auto;
     padding:0;
     background-color: rgb(255, 255, 255);
-    min-height: 600px;
+    
   }
   
   header {
+    width: 1025px;
+    max-width: 100%;
     position: fixed;
-    width:100%;
-    max-width: 1200px;
     padding: 10px 20px;
     z-index: 1000;
-    background-color: black;
+    background-color: rgb(10, 9, 9);
     color: aliceblue;
     display: block;
     margin:  0;
@@ -412,16 +449,17 @@ html, body {
     margin-top:36px ;
     margin-left: 10px;
     bottom: 30px;
-    max-width: 60%;
-    height: 40%;
+    width: 400px;
     position: relative;
     top: 40px;
 }
   .conteudoImg {
+    font-size: 28px;
+    right: 580px;
+    top: 90px;
     display: flex;
     position: relative;
-    right: 590px;
-    top:90px;
+    
     
   }
 
@@ -436,13 +474,14 @@ html, body {
     font-size: 18px;
     width: 450px;
     left: 450px;
-    top: 50px;
+    top: 40px;
     }
   
   .conteudoImg h2  {
+    display: flex;
     position: relative;
-    font-size: 28px;
-    left: 623px;
+    font-size: 25px;
+    left: 609px;
     
   }
 
@@ -459,7 +498,8 @@ html, body {
     display: flex;
   }
 
-  section#produtos img {
+  section#list-products img {
+    display: flex;
     max-width: 250px;
   }
 
@@ -472,7 +512,7 @@ html, body {
     flex-direction: column;
     display: flex;
     align-items: center;
-    max-width: 300px;
+    max-width: 600px;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -481,11 +521,76 @@ html, body {
   article img {
     position: relative;
     right: 10px;
-    width: 150px;
+    width: 450px;
     max-width: 100%;
     margin-bottom: 20px;
   }
+  
+  .product-title  {
+    position: relative;
+    right: 35px;
+    font-size: 20px;
+    bottom: 13px;
+    color: #333;
+    
+  }
 
+  .product-description {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    bottom:20px ;
+    right: 19px;
+  } 
+
+  .product-price {
+    
+    font-size: 25px; 
+    font-weight: bold;
+    color:#010101 ;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom:2px solid #ddd ;
+    display: inline-block;
+  }
+  
+  .btn {
+    width:200px ;
+    max-width: 100%;
+    padding: 5px 10px; /* Reduz o padding para deixar o botão mais fino */
+    font-size: 14px; /* Ajuste o tamanho do texto se necessário */
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    position: relative;
+    left: 20px;
+  }
+  .customBtn span {
+    position: relative;
+    font-size: 15px;
+  }
+
+  .price-conteiner {
+    right: 22px;
+    position: relative;
+    bottom: 35px;
+    margin-bottom: 70px;
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    padding: 10px auto auto 10px;
+    font-size: 18px;
+    
+
+  } 
+
+/* 
   article h2 {
     margin-top: -15px;
     text-align: center;
@@ -496,36 +601,35 @@ html, body {
   }
 
   article p {
-    bottom: 10px;
-    margin-bottom:-8px ;
+    
     width: 60%;
     position: relative;
     left: 48px;
     text-align: left;
     font-size: 12px;
-  }
+  } */
 
   .linhaProduct {
     width: 100%;
     position: relative;
     bottom: -18px;
-    max-width: 1200px;
     border-radius: 3px;
-    background-color: black;
+
   }
 
-  #produtos {
+  #list-products {
     margin-left:10px ;
     position: relative;
-    margin-top: 10px;
-    bottom: 260px;
+    margin-top: 0px;
+    top: 50px;
   }
 
   .h2Titulo h2 {
+    margin-left: 15px;
     position: relative;
     margin-bottom: -10px;
     bottom: -20px;
-    font-size: 18px;
+    font-size: 26px;
     color: rgb(15, 16, 16);
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
