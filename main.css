@@ -197,18 +197,21 @@ html, body {
   }
 
   .customBtn  {
-    display: inline-flex;
+    display: block;
     align-items: center; 
     white-space: nowrap; 
     margin: 0 auto;
-    left: 403px;
+    text-align: center;
 
 
   }
+  .price-conteiner{
+    display:inline-block ;
+  }
 
   .customBtn span {
-    font-size: 20px ;
-    display: inline-flex;
+    font-size: 15px ;
+    display: block;
     
   }
 }
@@ -598,7 +601,6 @@ html, body {
   }
 
   #list-products {
-
     margin-left:10px ;
     position: relative;
     margin-top: 0px;
