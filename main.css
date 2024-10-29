@@ -505,6 +505,7 @@ html, body {
   }
 
   .listaProdutos {
+    margin-top: 30px;
     max-width: 100%;
     display: flex;
   }
@@ -587,42 +588,21 @@ html, body {
     width: 200px;
     padding: 10px auto auto 10px;
     font-size: 18px;
-    
-
   } 
-
-/* 
-  article h2 {
-    margin-top: -15px;
-    text-align: center;
-    left: -10px;
-    font-size: 19px;
-    position: relative;
-    font-weight: bold;
-  }
-
-  article p {
-    
-    width: 60%;
-    position: relative;
-    left: 48px;
-    text-align: left;
-    font-size: 12px;
-  } */
 
   .linhaProduct {
     width: 100%;
     position: relative;
-    bottom: -18px;
+    bottom: -28px;
     border-radius: 3px;
-
   }
 
   #list-products {
+
     margin-left:10px ;
     position: relative;
     margin-top: 0px;
-    top: 50px;
+    top: 60px;
   }
 
   .h2Titulo h2 {
