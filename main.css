@@ -404,8 +404,9 @@ html, body {
   }
   
   header {
-    width: 1025px;
-    max-width: 100%;
+    width:100%;
+    box-sizing: border-box;
+    max-width:100%;
     position: fixed;
     padding: 10px 20px;
     z-index: 1000;
