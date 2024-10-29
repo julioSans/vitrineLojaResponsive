@@ -19,11 +19,8 @@ html, body {
 
 /* tela celular  */
 @media  (max-width:767px) {
-
-
-  /* Estilos para telas a partir de 576px */
   .principal {
-    max-width: 100%; /* Ajuste a largura para telas entre 801px e 1199px */
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -41,12 +38,6 @@ html, body {
     display: block;
     margin: 0 auto;
   }
-
-  /* .cabecalho  h1  {
-    padding: auto;
-    font-size: 14px; 
-    
-  } */
 
   .conteiner-header {
     display: flex;
@@ -165,6 +156,7 @@ html, body {
   }
 
   .product-description {
+    width: 100%;
     font-size: 14px;
     color: #666;
     margin-bottom: 15px;
@@ -219,7 +211,9 @@ html, body {
 @media (min-width: 768px) and  (max-width:1024px){
     /* para tablets em modo  paisagem */
   .principal {
-    max-width: 1000px; /* Ajuste a largura para telas entre 801px e 1199px */
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
     background-color: rgb(255, 255, 255);
@@ -229,7 +223,8 @@ html, body {
   header {
     position: fixed;
     width: 100%;
-    max-width: 1024px;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 10px 15px; /* Pode ajustar o padding para telas menores */
     z-index: 1000;
     background-color: black;
@@ -377,8 +372,7 @@ html, body {
     cursor: pointer;
     border-radius: 5px;
     position: relative;
-    position: relative;
-    left: 20px;
+    
   }
   .customBtn span {
     position: relative;
@@ -387,10 +381,8 @@ html, body {
 
   .price-conteiner {
     margin-bottom: 30px;
-    display: flex;
-    align-items: center;
+    display: block;
     justify-content: flex-start;
-    width: 400px;
     padding: 10px auto auto 10px;
     
 
